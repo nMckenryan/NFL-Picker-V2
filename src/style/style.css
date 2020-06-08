@@ -1,0 +1,224 @@
+/*!
+ * Start Bootstrap - One Page Wonder v5.0.2 (https://startbootstrap.com/template-overviews/one-page-wonder)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-one-page-wonder/blob/master/LICENSE)
+ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Catamaran";
+  font-weight: 800 !important;
+}
+
+.bg-black {
+  background-color: #000 !important;
+}
+
+header.masthead {
+  position: relative;
+  overflow: hidden;
+  padding-top: calc(2rem + 36px);
+  padding-bottom: 4rem;
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(#ff6a00),
+    to(#ee0979)
+  );
+  background: linear-gradient(0deg, #1460af 0%, #002967 100%);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+header.masthead {
+  padding-top: 10px;
+  z-index: 1;
+  position: relative;
+}
+
+header.masthead .masthead-content .masthead-heading {
+  font-size: 4rem;
+}
+
+header.masthead .masthead-content .masthead-subheading {
+  font-size: 2rem;
+}
+
+.bg-primary {
+  background-color: #ee0979 !important;
+}
+
+/*  BUTTONS */
+.btn-primary {
+  background-color: #ee0979;
+  border-color: #ee0979;
+}
+
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:hover {
+  background-color: #bd1209 !important;
+  border-color: #bd1209 !important;
+}
+
+.btn-primary:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(238, 9, 121, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(238, 9, 121, 0.5);
+}
+
+/*  CAROUSEL */
+.carousel-inner > .item {
+  position: relative;
+  display: none;
+  -webkit-transition: 2s ease-in-out left;
+  -moz-transition: 2s ease-in-out left;
+  -o-transition: 2s ease-in-out left;
+  transition: 2s ease-in-out left;
+}
+
+.carousel-inner .carousel-item-left.active {
+  transform: translateX(-50%);
+}
+.carousel-inner .carousel-item-right.active {
+  transform: translateX(50%);
+}
+
+.carousel-inner .carousel-item-next {
+  transform: translateX(50%);
+}
+.carousel-inner .carousel-item-prev {
+  transform: translateX(-50%);
+}
+
+/* .carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{
+  transform: translateX(0);
+}X(0); */
+
+.carousel-inner .activeTeamLogo {
+  color: pink;
+  margin: 0, auto;
+  width: 10%;
+}
+
+/*
+CC 2.0 License Iatek LLC 2018
+Attribution required
+*/
+
+.carousel-item {
+  margin-right: 0;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+/*Mostly  Code for future updates, but I run into issues if it's trimmed */
+@media (min-width: 768px) {
+  /* show 3 items */
+  .carousel-inner .active,
+  .carousel-inner .active + .carousel-item,
+  .carousel-inner .active + .carousel-item + .carousel-item {
+    display: block;
+  }
+
+  .carousel-inner
+    .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+  .carousel-inner
+    .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)
+    + .carousel-item,
+  .carousel-inner
+    .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)
+    + .carousel-item
+    + .carousel-item {
+    transition: none;
+  }
+
+  .carousel-inner .carousel-item-next,
+  .carousel-inner .carousel-item-prev {
+    position: relative;
+    transform: translate3d(0, 0, 0);
+  }
+
+  .carousel-inner
+    .active.carousel-item
+    + .carousel-item
+    + .carousel-item
+    + .carousel-item {
+    position: absolute;
+    top: 0;
+    right: -33.3333%;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+
+  /* left or forward direction */
+  .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+  .carousel-item-next.carousel-item-left + .carousel-item,
+  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+  .carousel-item-next.carousel-item-left
+    + .carousel-item
+    + .carousel-item
+    + .carousel-item {
+    position: relative;
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  /* farthest right hidden item must be abso position for animations */
+  .carousel-inner .carousel-item-prev.carousel-item-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+
+  /* right or prev direction */
+  .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+  .carousel-item-prev.carousel-item-right + .carousel-item,
+  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+  .carousel-item-prev.carousel-item-right
+    + .carousel-item
+    + .carousel-item
+    + .carousel-item {
+    position: relative;
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+    visibility: visible;
+  }
+}
+
+/* CUSTOM STUFF */
+
+.carousel-inner {
+  text-align: center;
+  display: inline-block;
+  padding: 50%;
+}
+
+#logo {
+  text-align: center;
+  font-family: Arial;
+}
+
+#logo h3 {
+  font-weight: normal;
+}
+
+#teamImg {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2.5%;
+}

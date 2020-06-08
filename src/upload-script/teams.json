@@ -1,0 +1,197 @@
+{
+  "teams": [
+    {
+      "id": "0",
+      "name": "Arizona Cardinals",
+      "logo": "card",
+      "message": "Not eligible for the Papacy."
+    },
+    {
+      "id": "1",
+      "name": "New England Patriots",
+      "logo": "pats",
+      "message": "Tom Brady: The Team."
+    },
+    {
+      "id": "2",
+      "name": "Dallas Cowboys",
+      "logo": "cowb",
+      "message": "An elite team with a sketchy owner."
+    },
+    {
+      "id": "3",
+      "name": "Philadelphia Eagles",
+      "logo": "eagles",
+      "message": "Good Team, Obnoxious Fans"
+    },
+    {
+      "id": "4",
+      "name": "Green Bay Packers",
+      "logo": "gbp",
+      "message": "Known for cheese paraphenalia."
+    },
+    {
+      "id": "5",
+      "name": "Pittsburgh Steelers",
+      "logo": "steelers",
+      "message": "Most of their players have criminal records."
+    },
+    {
+      "id": "6",
+      "name": "Denver Broncos",
+      "logo": "bronc",
+      "message": "Yeah They're alright"
+    },
+    {
+      "id": "7",
+      "name": "Oakland Raiders",
+      "logo": "raid",
+      "message": "Yarr Harr"
+    },
+    {
+      "id": "8",
+      "name": "Chicago Bears",
+      "logo": "bears",
+      "message": "Wait, aren't they a baseball team?"
+    },
+    {
+      "id": "9",
+      "name": "New Orleans Saints",
+      "logo": "saints",
+      "message": "Yo why is everything from N'Orleans deep fried?"
+    },
+    {
+      "id": "10",
+      "name": "Los Angeles Rams",
+      "logo": "rams",
+      "message": "Recently destroyed by the Patriots"
+    },
+    {
+      "id": "11",
+      "name": "Kansas City Chiefs",
+      "logo": "chief",
+      "message": "America's least racist Native American themed team."
+    },
+    {
+      "id": "12",
+      "name": "New York Giants",
+      "logo": "nyg",
+      "message": "They're not that big, really."
+    },
+    {
+      "id": "13",
+      "name": "San Francisco 49ers",
+      "logo": "sf49",
+      "message": "HUR HUR MORE LIKE 69ERS"
+    },
+    {
+      "id": "14",
+      "name": "Washington Redskins",
+      "logo": "wrs",
+      "message": "Bruh just change your name already."
+    },
+    {
+      "id": "15",
+      "name": "Seattle Seahawks",
+      "logo": "ssh",
+      "message": "Did ok in a SuperBowl once."
+    },
+    {
+      "id": "16",
+      "name": "Minnesota Vikings",
+      "logo": "vik",
+      "message": "I've never seen a Viking wear Purple and Yellow."
+    },
+    {
+      "id": "17",
+      "name": "Miami Dolphins",
+      "logo": "md",
+      "message": "Unaffiliated with Seaworld."
+    },
+    {
+      "id": "18",
+      "name": "Baltimore Ravens",
+      "logo": "ravens",
+      "message": "Wait, is this a Edgar Allan Poe reference?"
+    },
+    {
+      "id": "19",
+      "name": "New York Jets",
+      "logo": "nyj",
+      "message": "Gee New York, how come Mom lets you have two teams?"
+    },
+    {
+      "id": "20",
+      "name": "Houston Texans",
+      "logo": "houst",
+      "message": "Rivals to to the Jacksonville Mississipians and the Chicago Illinoisans"
+    },
+    {
+      "id": "21",
+      "name": "Detroit Lions",
+      "logo": "lions",
+      "message": "The players are just happy to have jobs, really."
+    },
+    {
+      "id": "22",
+      "name": "Indianapolis Colts",
+      "logo": "colt",
+      "message": "They have a Colt following"
+    },
+    {
+      "id": "23",
+      "name": "Los Angeles Chargers",
+      "logo": "charg",
+      "message": "Their logo looks like a Schoolboy's haircut."
+    },
+    {
+      "id": "24",
+      "name": "Carolina Panthers",
+      "logo": "panthers",
+      "message": "Who cares"
+    },
+    {
+      "id": "25",
+      "name": "Atlanta Falcons",
+      "logo": "falcons",
+      "message": "cool I guess"
+    },
+    {
+      "id": "26",
+      "name": "Cincinatti Bengals",
+      "logo": "bengal",
+      "message": "Someone needs to tell them that a Bengal is a place, not just a Tiger."
+    },
+    {
+      "id": "27",
+      "name": "Buffalo Bills",
+      "logo": "bills",
+      "message": "It puts the lotion in the basket or else it gets the hose again."
+    },
+    {
+      "id": "28",
+      "name": "Tennessee Titans",
+      "logo": "titans",
+      "message": "The name 'Giants' was taken."
+    },
+
+    {
+      "id": "29",
+      "name": "Jacksonville Jaguars",
+      "logo": "jag",
+      "message": "They're based in London. Naturally."
+    },
+    {
+      "id": "30",
+      "name": "Tampa Bay Buccanners",
+      "logo": "bucc",
+      "message": "Totally forgot about this team until the last minute."
+    },
+    {
+      "id": "31",
+      "name": "Cleveland Browns",
+      "logo": "browns",
+      "message": "Move over Detroit, there's a new Factory of Sadness"
+    }
+  ]
+}

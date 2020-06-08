@@ -1,0 +1,30 @@
+$base: rgb(24, 38, 112);
+$secondary: gold;
+$accents: rgba(24, 39, 90);
+$fonts: ivory;
+
+#root {
+  text-align: center;
+  padding-bottom: 40% !important;
+  background: rgb(24, 38, 112);
+  background: radial-gradient(
+    circle,
+    rgba(24, 38, 112, 1) 0%,
+    rgba(39, 94, 220, 1) 100%
+  );
+}
+
+.container {
+  background-color: $base;
+  padding-bottom: 40% !important;
+  color: $fonts;
+}
+
+.carousel {
+  background-color: $secondary;
+
+  .carousel-caption {
+    position: static;
+    color: $fonts;
+  }
+}
