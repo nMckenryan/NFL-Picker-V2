@@ -1,28 +1,14 @@
-import React, { Component } from "react";
-import { Container, Button, Carousel, Image } from "react-bootstrap";
-//import "./style/style.css";
+import React, { Component, useRef, useState } from "react";
+import { Layout, Carousel, Button, Slider } from "antd";
+import pic from "./images/bears.jpg";
 
-export default class Spinner extends Component {
+const Spinner = ({ teamArray }) => {
   //CUTTING DOWN CODE: https://www.freecodecamp.org/forum/t/importing-images-in-react/206974/3
-  constructor(props) {
-    super(props);
-    // this.state = {
-    //   fullTeamArray: [],
-    // };
-    console.log("constructor launched");
-  }
+  const [slide, setSlide] = useState(0);
 
-  componentDidMount() {
-    console.log("COMPONENT MOUNTED" + this.props.teamArray);
-
-    this.setState({ fullTeamArray: this.props.teamArray });
-    // console.log("ARRAY" + JSON.stringify(this.state.fullTeamArray)});
-
-    // this.setState({ fullTeamArray: JSON.stringify(this.props.teamArray) });
-    console.log("STATE UPDATED");
-  }
-
-  importAll = (r) => {
+  const slider = useRef();
+  //Imports all the images from local storage to be webpack compatible.
+  const importAll = (r) => {
     let images = {};
     r.keys().map((item, index) => {
       console.log("ITEM NAME: " + item);
@@ -32,26 +18,56 @@ export default class Spinner extends Component {
     return images;
   };
 
-  render() {
-    const images = this.importAll(
-      require.context("./images", false, /.(png|jpe?g|svg)$/)
-    );
+  const images = importAll(
+    require.context("./images", false, /.(png|jpe?g|svg)$/)
+  );
 
-    return (
-      <div>
-        {this.props.teamArray.map((team, id) => {
+  // goToSlide = (number) => {
+  //   goTo(number);
+  // };
+
+  const settings = {
+    className: "center",
+    centerMode: true,
+    infinite: true,
+    centerPadding: "60px",
+    slidesToShow: 3,
+    speed: 500,
+  };
+
+  return (
+    <div>
+      <Carousel
+        {...settings}
+        ref={(ref) => {
+          console.log(ref);
+          slider.current = ref;
+        }}
+      >
+        {teamArray.map((team, id) => {
           return (
             <div>
-              <h1>{team.name}</h1>
-              <p>{team.message}</p>
-              {console.log("IMAGES: " + team.logo + images[team.logo])}
-              <img src={images[team.logo]} alt="yeet" />
-              {/* // REVIEW THIS ARTIVLE
-              https://stackoverflow.com/questions/42118296/dynamically-import-images-from-a-directory-using-webpack#_=_ */}
+              <p>{team.name}</p>
+              <img src={pic} alt="yeet" />
+              {team.message}
+
+              {/* <img src={images[team.logo]} alt="yeet" /> */}
             </div>
           );
         })}
-      </div>
-    );
-  }
-}
+      </Carousel>
+      <Button
+        onClick={(e) => {
+          let rand = Math.round(Math.random() * 31);
+          //        this.state.slide.setState(e);
+          slider.current.goTo(rand);
+          console.log(rand);
+        }}
+      >
+        SPIN
+      </Button>
+    </div>
+  );
+};
+
+export default Spinner;

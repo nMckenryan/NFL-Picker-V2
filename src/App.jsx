@@ -1,7 +1,8 @@
 import React from "react";
 import Spinner from "./components/Spinner";
-import { Container, Col, Button, Row } from "react-bootstrap";
 import firebase from "./upload-script/firebase";
+import { Layout, PageHeader } from "antd";
+import "./style/style.less";
 
 function App() {
   const [teams, setTeams] = React.useState([]);
@@ -22,31 +23,18 @@ function App() {
   }, []);
 
   return (
-    <Container>
-      <Row>
-        <Col>
-          <h3>NFL Team Picker</h3>
-          <h5>
-            Can't decide on a team to start with? Spin to choose your new
-            Favorite!
-          </h5>
-        </Col>
-      </Row>
-      <Row>
-        <Col>
-          {/* {console.log("ASSIGNED TEAMSS" + this.teams[1])} */}
-          <Spinner teamArray={teams} />
-          <Button
-            variant="warning"
-            size="lg"
-            id="spinButton"
-            href="#carouselExample"
-          >
-            SPIN
-          </Button>
-        </Col>
-      </Row>
-    </Container>
+    <div className="App">
+      <Layout>
+        <PageHeader
+          className="site-page-header"
+          title="NFL Team Picker"
+          subTitle="Can't decide on a team to start with? Spin to choose your new"
+        />
+
+        {/* {console.log("ASSIGNED TEAMSS" + this.teams[1])} */}
+        <Spinner teamArray={teams} />
+      </Layout>
+    </div>
   );
 }
 
