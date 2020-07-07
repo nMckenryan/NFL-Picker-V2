@@ -1,5 +1,7 @@
 import firebase from "firebase";
 
+//Configuration Files for Firebase upload
+
 const firebaseConfig = {
   apiKey: "AIzaSyCD5GaG57k9YSJAI_FYoejwr2LDIphg-W0",
   authDomain: "fir-boilerplate-7e89c.firebaseapp.com",

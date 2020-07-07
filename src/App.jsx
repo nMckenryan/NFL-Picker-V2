@@ -28,10 +28,8 @@ function App() {
         <PageHeader
           className="site-page-header"
           title="NFL Team Picker"
-          subTitle="Can't decide on a team to start with? Spin to choose your new"
+          subTitle="Can't decide on a team to start with? Spin to choose your new favorite team"
         />
-
-        {/* {console.log("ASSIGNED TEAMSS" + this.teams[1])} */}
         <Spinner teamArray={teams} />
       </Layout>
     </div>
